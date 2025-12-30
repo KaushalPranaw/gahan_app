@@ -8,4 +8,8 @@ public interface LoanService {
     Loan createLoan(Loan loan);
 
     double calculatePayableAmount(Long loanId);
+
+    Loan getLoanById(Long loanId);
+
+    long getMonthsPassed(Loan loan);
 }
